@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heart and Text</title>
+	<style>
+		.heart {
+			background-color: red;
+			display: inline-block;
+			height: 50px;
+			margin: 0 10px;
+			position: relative;
+			top: 0;
+			transform: rotate(-45deg);
+			position: absolute;
+			left: 45%;
+			top: 45%;
+			width: 50px;
+		}
+		.heart:before,
+		.heart:after {
+			content: "";
+			background-color: red;
+			border-radius: 50%;
+			height: 50px;
+			position: absolute;
+			width: 50px;
+		}
+		.heart:before {
+			top: -25px;
+			left: 0;
+		}
+		.heart:after {
+			left: 25px;
+			top: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="heart"></div>
+	<p style="font-size: 20px; font-weight: bold;">be ngoc iu anh nhieu hon</p>
+</body>
+</html>
